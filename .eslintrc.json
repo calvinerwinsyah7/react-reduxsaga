@@ -1,19 +1,32 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "standard-with-typescript",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    }
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@emotion"],
+  "rules": {
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "init-declarations": "error",
+    "space-before-function-paren": ["error", "never"],
+    "no-unused-vars": "warn",
+    "arrow-parens": ["error", "always"],
+    "max-len": ["error", { "code": 80 }],
+    "consistent-return": "error",
+    "emotion/jsx-import": "error",
+    "emotion/no-vanilla": "error",
+    "emotion/syntax-preference": ["warn", "css"]
+  }
 }
