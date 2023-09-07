@@ -1,6 +1,6 @@
-import { all } from 'redux-saga/effects'
+import { all } from "redux-saga/effects"
 
-function * rootSaga () {
+function* rootSaga() {
   yield all([
     // Add other sagas here
   ])

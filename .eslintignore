@@ -10,4 +10,5 @@ out/
 *.spec.ts
 *.spec.tsx
 *.d.ts
-commitlint.config.js
+*.svg
+*.css

@@ -1,8 +1,8 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes } from 'react-router-dom'
+import React from "react"
+import { BrowserRouter as Router, Routes } from "react-router-dom"
 
-import routeData from './routes'
-import generateRoutes from './utils/routeGenerator'
+import routeData from "./routes"
+import generateRoutes from "./utils/routeGenerator"
 
 const AppRouter: React.FC = () => {
   const routes = generateRoutes(routeData)

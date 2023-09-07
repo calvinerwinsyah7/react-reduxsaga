@@ -1,21 +1,25 @@
 {
   "env": {
     "browser": true,
-    "amd": true,
-    "node": true,
     "es2021": true,
-    "commonjs": true,
-    "es6": true,
-    "jest": true
+    "node": true
   },
-  "extends": ["standard-with-typescript", "plugin:react/recommended"],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true
     },
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
   "plugins": [
     "jest",
@@ -29,6 +33,8 @@
   ],
   "root": true,
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -44,8 +50,11 @@
     "@typescript-eslint/no-unnecessary-type-assertion": ["off"],
     "@typescript-eslint/no-unnecessary-type-constraint": ["off"],
     "@typescript-eslint/no-unused-vars": "warn",
-
     "@typescript-eslint/no-var-requires": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["off"],
+    "@typescript-eslint/triple-slash-reference": ["off"],
+    "@typescript-eslint/no-floating-promises": ["off"],
+    "@typescript-eslint/strict-boolean-expressions": ["off"],
     "import/default": ["off"],
     "import/extensions": [
       "warn",
@@ -97,7 +106,6 @@
       { "blankLine": "always", "next": "*", "prev": "class" }
     ],
     "prefer-const": "warn",
-    "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "warn",
     "react/function-component-definition": [
       "warn",
@@ -112,11 +120,9 @@
     "react/jsx-no-literals": "warn",
     "react/jsx-no-useless-fragment": "warn",
     "react/jsx-pascal-case": "warn",
-    "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "warn",
     "react/prefer-stateless-function": "warn",
     "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
     "require-await": "warn",
     "semi": ["warn", "never"],
     "sort-destructure-keys/sort-destructure-keys": "warn",
@@ -141,11 +147,13 @@
       "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
       "typescript": { "alwaysTryTypes": true }
     },
     "react": {
       "version": "detect"
     }
-  },
-  "ignorePatterns": ["commitlint.config.js"]
+  }
 }
