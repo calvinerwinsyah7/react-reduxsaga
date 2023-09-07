@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+out/
+*.js
+.eslintrc.js
+.eslintrc.json
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+*.d.ts
+*.svg
+*.css
