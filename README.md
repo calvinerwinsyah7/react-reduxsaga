@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# React Typescript and Redux Saga Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template provides a starting point for developing front-end websites using React with TypeScript and Redux Saga for state management. It includes several useful tools and configurations to streamline your development process.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **ESLint:** Enforce coding standards and catch errors early.
+- **Stylelint:** Ensure consistent and clean CSS/SCSS code.
+- **Emotion.js:** A popular CSS-in-JS library for styling React components.
+- **Prettier:** Automatically format your code for consistency.
+- **SASS:** Use the power of SASS for enhanced CSS development.
+- **Husky:** Pre-commit hooks for code quality.
 
-### `yarn start`
+More features will be added in the future!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To get started with this template, follow these steps:
 
-### `yarn test`
+1. Clone the repository:
+git clone <https://github.com/calvinerwinsyah7/react-reduxsaga.git>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Change into the project directory:
+cd react-typescript-reduxsaga
 
-### `yarn build`
+3. Install the dependencies using Yarn:
+yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This template is designed for developing front-end web applications. The main code is organized in the `src` folder. Here's a brief overview of the folder structure:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/pages`: Each individual page of your application.
+- `src/components`: Reusable React components.
+- `src/redux`: Redux setup and related files.
+- `src/styles`: Global styles, SCSS, and Emotion.js components.
 
-### `yarn eject`
+You can start building your application by adding pages to the `src/pages` directory and utilizing the Redux store for state management.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Configuration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+None
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project is licensed under the [MIT License](LICENSE).
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Calvin Erwinsyah](https://github.com/calvinerwinsyah7)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
+
+- Special thanks to the open-source community for their amazing contributions.
+
+## FAQs
+
+None
