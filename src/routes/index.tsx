@@ -1,11 +1,12 @@
-import Home from '../pages/Home'
 import type { RouteData } from 'utils/routeGenerator'
+
+import Home from '../pages/Home'
 
 const routeData: RouteData[] = [
   {
-    path: '/',
     component: Home,
-    name: 'Home Page'
+    name: 'Home Page',
+    path: '/'
   }
   // Add more route data objects as needed
 ]

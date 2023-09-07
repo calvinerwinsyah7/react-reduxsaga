@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route } from 'react-router-dom'
 
 export interface RouteData {
@@ -9,11 +8,7 @@ export interface RouteData {
 
 function generateRoutes (routeData: RouteData[]) {
   return routeData.map((route) => (
-    <Route
-      key={route.path}
-      path={route.path}
-      element={<route.component />}
-    />
+    <Route key={route.path} path={route.path} element={<route.component />} />
   ))
 }
 

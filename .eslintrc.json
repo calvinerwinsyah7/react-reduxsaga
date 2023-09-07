@@ -14,7 +14,8 @@
       "modules": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "jest",
@@ -27,7 +28,112 @@
     "@typescript-eslint"
   ],
   "root": true,
-  "rules": {},
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": ["off"],
+    "@typescript-eslint/no-empty-interface": ["off"],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": ["off"],
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["off"],
+    "@typescript-eslint/no-unnecessary-condition": ["off"],
+    "@typescript-eslint/no-unnecessary-type-assertion": ["off"],
+    "@typescript-eslint/no-unnecessary-type-constraint": ["off"],
+    "@typescript-eslint/no-unused-vars": "warn",
+
+    "@typescript-eslint/no-var-requires": ["off"],
+    "import/default": ["off"],
+    "import/extensions": [
+      "warn",
+      {
+        "js": "never",
+        "json": "always",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/newline-after-import": ["warn"],
+    "import/no-duplicates": ["error"],
+    "import/no-named-as-default-member": "off",
+    "import/no-unresolved": ["error"],
+    "import/no-unused-modules": ["error"],
+    "import/order": [
+      "warn",
+      {
+        "alphabetize": {
+          "caseInsensitive": false,
+          "order": "asc"
+        },
+        "groups": ["builtin", "external", "parent", "internal", "index"],
+        "newlines-between": "always"
+      }
+    ],
+    "no-console": "warn",
+    "no-eval": ["warn", { "allowIndirect": true }],
+    "no-implied-eval": "warn",
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "no-var": "warn",
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "next": "return", "prev": "*" },
+      { "blankLine": "always", "next": "throw", "prev": "*" },
+      { "blankLine": "always", "next": "if", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "if" },
+      { "blankLine": "always", "next": "for", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "for" },
+      { "blankLine": "always", "next": "while", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "while" },
+      { "blankLine": "always", "next": "try", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "try" },
+      { "blankLine": "always", "next": "switch", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "switch" },
+      { "blankLine": "always", "next": "class", "prev": "*" },
+      { "blankLine": "always", "next": "*", "prev": "class" }
+    ],
+    "prefer-const": "warn",
+    "prettier/prettier": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/jsx-key": "error",
+    "react/jsx-no-literals": "warn",
+    "react/jsx-no-useless-fragment": "warn",
+    "react/jsx-pascal-case": "warn",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "warn",
+    "react/prefer-stateless-function": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "require-await": "warn",
+    "semi": ["warn", "never"],
+    "sort-destructure-keys/sort-destructure-keys": "warn",
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false
+      }
+    ],
+    "sort-keys": [
+      "warn",
+      "asc",
+      { "caseSensitive": true, "minKeys": 2, "natural": false }
+    ],
+    "sort-keys-fix/sort-keys-fix": "warn"
+  },
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/ignore": ["moment", "react"],
@@ -40,5 +146,6 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "ignorePatterns": ["commitlint.config.js"]
 }
