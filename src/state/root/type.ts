@@ -1,4 +1,3 @@
-
 export type RootActions = any
 
 declare module 'typesafe-actions' {

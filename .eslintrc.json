@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "es2021": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["standard-with-typescript", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "jest",
+    "import",
+    "prettier",
+    "react",
+    "react-hooks",
+    "sort-destructure-keys",
+    "sort-keys-fix",
+    "@typescript-eslint"
+  ],
+  "root": true,
+  "rules": {},
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/ignore": ["moment", "react"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": { "alwaysTryTypes": true }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

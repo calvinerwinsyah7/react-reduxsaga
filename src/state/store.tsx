@@ -1,18 +1,18 @@
-import { createStore, applyMiddleware } from 'redux';
-import createSagaMiddleware from 'redux-saga';
-import { rootReducer } from 'state/root/reducer';
-import rootSaga from 'state/root/saga';
+import { createStore, applyMiddleware } from 'redux'
+import createSagaMiddleware from 'redux-saga'
+import { rootReducer } from 'state/root/reducer'
+import rootSaga from 'state/root/saga'
 
-const sagaMiddleware = createSagaMiddleware();
+const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
   rootReducer,
   applyMiddleware(sagaMiddleware)
-);
+)
 
 const isDevelopment = true
 export const persistor = isDevelopment ? require('redux-persist').persistStore(store) : null
 
-sagaMiddleware.run(rootSaga);
+sagaMiddleware.run(rootSaga)
 
-export default store;
+export default store
