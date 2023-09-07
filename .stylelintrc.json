@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "semicolon": "always",
+    "quotes": "single",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-colon-space-after": "always",
+    "max-line-length": 80,
+    "no-empty-source": true,
+    "no-duplicate-selectors": true,
+    "property-no-unknown": true,
+    "selector-no-id": true,
+    "selector-max-length": 3,
+    "selector-list-comma-space-after": "always-single-line",
+    "selector-no-universal": true,
+    "value-no-vendor-prefix": true,
+    "declaration-no-important": true,
+    "no-empty-comment": true,
+    "function-comma-space-after": "always-single-line",
+    "media-feature-no-missing-prefix": true,
+    "at-rule-no-vendor-prefix": true,
+    "rule-no-duplicate-properties": true
+  }
+}
