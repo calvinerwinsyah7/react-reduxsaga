@@ -1,9 +1,9 @@
-import React from "react"
+import React, { LazyExoticComponent } from "react"
 import { Route } from "react-router-dom"
 
 export interface RouteData {
   path: string
-  component: () => JSX.Element
+  component: LazyExoticComponent<() => JSX.Element>
   name: string // Add any additional route-specific properties
 }
 

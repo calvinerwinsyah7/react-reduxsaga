@@ -1,5 +1,8 @@
-import Home from "pages/Home"
+import { lazy } from "react"
+
 import type { RouteData } from "utils/routeGenerator"
+
+const Home = lazy(() => import(/* webpackChunkName: "home" */ "pages/Home"))
 
 const routeData: RouteData[] = [
   {
@@ -7,7 +10,6 @@ const routeData: RouteData[] = [
     name: "Home Page",
     path: "/",
   },
-  // Add more route data objects as needed
 ]
 
 export default routeData
