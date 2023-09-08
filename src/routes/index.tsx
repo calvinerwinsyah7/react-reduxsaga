@@ -1,5 +1,4 @@
-import Home from "../pages/Home"
-
+import Home from "pages/Home"
 import type { RouteData } from "utils/routeGenerator"
 
 const routeData: RouteData[] = [
