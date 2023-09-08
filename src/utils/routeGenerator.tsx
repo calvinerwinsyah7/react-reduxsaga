@@ -4,7 +4,7 @@ import { Route } from "react-router-dom"
 export interface RouteData {
   path: string
   component: LazyExoticComponent<() => JSX.Element>
-  name: string // Add any additional route-specific properties
+  name: string
 }
 
 const generateRoutes = (routeData: RouteData[]) => {
