@@ -1,9 +1,10 @@
+import React from "react"
 import { Route } from "react-router-dom"
 
 export interface RouteData {
-  path: string;
-  component: () => JSX.Element;
-  name: string; // Add any additional route-specific properties
+  path: string
+  component: () => JSX.Element
+  name: string // Add any additional route-specific properties
 }
 
 const generateRoutes = (routeData: RouteData[]) => {
