@@ -32,6 +32,7 @@
     "@typescript-eslint"
   ],
   "root": true,
+  "ignorePatterns": ["config/", "scripts/"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",
