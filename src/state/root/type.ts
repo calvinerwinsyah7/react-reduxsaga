@@ -1,7 +1,7 @@
-export type RootActions = any;
+export type RootAction = any
 
 declare module "typesafe-actions" {
   interface Types {
-    RootAction: RootActions;
+    RootAction: RootAction
   }
 }
